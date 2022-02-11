@@ -63,4 +63,4 @@ python test.py
 
 ## Acknowledgments
 * I use this dataset for training: [Chest X-ray masks and labels](https://www.kaggle.com/nikhilpandey360/chest-xray-masks-and-labels)
-* The code is largely influenced by [CycleGAN's PyTorch implementation](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix) and Aladdin Persson's [tutorial](https://www.youtube.com/watch?v=4LktBHGCNfw)
+* The code is largely influenced by [CycleGAN's PyTorch implementation](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix) and [Aladdin Persson](https://www.youtube.com/channel/UCkzW5JSFwvKRjXABI-UTAkQ)'s [tutorial](https://www.youtube.com/watch?v=4LktBHGCNfw)
