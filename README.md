@@ -47,7 +47,18 @@ python main.py
 
 After training the model, a file called `checkpoint.pt` will be automatically saved.
 
-##
+## Generate images
+```
+python generate_image.py
+
+## Required parameters
+--test_image_folder                             # The folder contains test images
+--generated_image_folder                        # The folder for saving generated images
+
+## Choose generator
+--generator_type                                # ["mask", "x_ray"]. "mask" will generated lung masks. "x_ray" will generate chest X-rays.
+
+
 
 
 
