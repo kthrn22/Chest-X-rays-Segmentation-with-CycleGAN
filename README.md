@@ -23,27 +23,29 @@ python main.py
 --x_ray_root                                    # The path folder of chest X-ray images
 
 ## Preprocess 
---image_size (128, 128)                         # Size of the image after being resized
---in_channels 1                                 # The number of channels of the image
+--image_size (128, 128)                         # Size of the image after being resized, default (128, 128)
+--in_channels 1                                 # The number of channels of the image, defaul 1
 
 ## Model Parameters
---num_residual_blocks 6                         # The number of residual blocks for the generator
---lambda_cycle 10.0                             # Weight of the cycle loss
---lambda-identity 0.5                           # Weight of the identity mapping loss
+--num_residual_blocks 6                         # The number of residual blocks for the generator, default 6
+--lambda_cycle 10.0                             # Weight of the cycle loss, default 10.0
+--lambda-identity 0.5                           # Weight of the identity mapping loss, default 0.5
 
 ## Train Parameters 
---num_epochs                                    # 
---num_epochs_decay                              #
---batch_size                                    #
---learning_rate                                 #
---beta1                                         #
---g_accumulation_steps                          #
---d_accumulation_steps                          #
+--num_epochs 50                                 # Number of epochs with the initial learning rate, default 50
+--num_epochs_decay 0                            # Number of epochs to linearly decaying the learning rate to zero, default 0
+--batch_size 1                                  # Size of training batch, default 1
+--learning_rate 2e-4                            # The initial learning rate of Adam optimizer, default 2e-4
+--beta1 0.5                                     # Momentum term of Adam optimizer, default 0.5
+--g_accumulation_steps 1                        # Gradient accumulation steps for generators, default 1
+--d_accumulation_steps 1                        # Gradient accumulation steps for discriminators, default 1
 
 ## Validation Parameters
---validate_image_path                           #
---validate_frequency                            #
+--validate_image_path None                      # The path of the image for validation, default None
+--validate_frequency 1                          # Frequency of validation, default 1
 ```
+
+##
 
 
 
