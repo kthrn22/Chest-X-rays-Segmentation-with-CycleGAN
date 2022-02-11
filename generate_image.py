@@ -16,9 +16,9 @@ generator = Generator(1, 6).to("cuda")
 Config = TestOptions().gather_options()
 
 if Config.generator_type == "mask":
-    generator.load_state_dict(checkpoint['generator_zebra'])
+    generator.load_state_dict(checkpoint['generator_mask'])
 if Config.generator_type == "x_ray":
-    generator.load_state_dict(checkpoint['generator_horse'])
+    generator.load_state_dict(checkpoint['generator_x_ray'])
 
 test_image_folder = os.listdir(Config.test_image_folder)
 
