@@ -57,9 +57,4 @@ python generate_image.py
 
 ## Choose generator
 --generator_type                                # ["mask", "x_ray"]. "mask" will generated lung masks. "x_ray" will generate chest X-rays.
-
-
-
-
-
-
+```
