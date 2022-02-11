@@ -15,7 +15,36 @@ PyTorch <br/>
 Prepare chest X-ray images and lung mask images. Have chest X-rays and lung masks in 2 seperate folders.
 
 ## Train the model
-Some parameters needed to be specified <br/>
 ```
-ayo
+python main.py
+
+## Specify the dataset path (required)
+--mask_root 
+--x_ray_root
+
+## Preprocess 
+--image_size 
+--in_channels
+
+## Model Parameters
+--num_residual_blocks
+--lambda_cycle
+--lambda-identity
+
+## Train Parameters 
+--num_epochs
+--num_epochs_decay
+--batch_size
+--learning_rate
+--beta1
+--g_accumulation_steps
+--d_accumulation_steps
+
+## Validation Parameters
+--validate_image_path
+--validate_frequency
 ```
+
+
+
+
