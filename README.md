@@ -45,6 +45,8 @@ python main.py
 --validate_frequency 1                          # Frequency of validation, default 1
 ```
 
+After training the model, a file called `checkpoint.pt` will be automatically saved.
+
 ##
 
 
