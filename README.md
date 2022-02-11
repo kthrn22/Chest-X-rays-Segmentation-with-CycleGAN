@@ -5,11 +5,11 @@ The network will be trained on unpaired images of chest X-rays and lung masks to
 * 2 Discriminators classifies whether the generated images are real or fake. <br/>
 
 The network can be applied when there is no paired images of chest X-rays and lung mask, since the network can create a lung mask that corresponds to a chest X-ray.
-.
+`.
 ├── build                   # Compiled files (alternatively `dist`)
 ├── docs                    # Documentation files (alternatively `doc`)
 ├── src                     # Source files (alternatively `lib` or `app`)
 ├── test                    # Automated tests (alternatively `spec` or `tests`)
 ├── tools                   # Tools and utilities
 ├── LICENSE
-└── README.md
+└── README.md`
