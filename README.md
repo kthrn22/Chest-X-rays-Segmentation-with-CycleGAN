@@ -11,10 +11,10 @@ Python 3 <br/>
 Numpy <br/>
 PyTorch <br/>
 
-## Preparing data
+## Prepare Training Data
 Prepare chest X-ray images and lung mask images. Have chest X-rays and lung masks in 2 seperate folders.
 
-## Train the model
+## Train The Model
 ```
 python main.py
 
@@ -45,16 +45,19 @@ python main.py
 --validate_frequency 1                          # Frequency of validation, default 1
 ```
 
-After training the model, a file called `checkpoint.pt` will be automatically saved.
+After training, a file called `checkpoint.pt` will be automatically saved. The file contains parameters of generators, discriminators, optimizers, and schedulers.
 
-## Generate images
+## Generate Images
 ```
-python generate_image.py
+python test.py
 
-## Required parameters
---test_image_folder                             # The folder contains test images
---generated_image_folder                        # The folder for saving generated images
+## Required
+--test_image_folder                             # Specify the folder of test images
+--generated_image_folder                        # Specify the folder that will save generated images
 
-## Choose generator
---generator_type                                # ["mask", "x_ray"]. "mask" will generated lung masks. "x_ray" will generate chest X-rays.
-```
+## Chose generator
+--generator_type                                # ["mask", "x_ray"]. "mask" will generate lung masks. "x_ray" will generate chest X-rays.
+
+
+
+
