@@ -1,5 +1,4 @@
-from random import sample
-from tensorflow_hub import image_embedding_column
+from random import shuffle
 import torch 
 import numpy as np
 import os
@@ -25,6 +24,8 @@ class dataset(Dataset):
         self.folder_mask = os.listdir(root_Mask) if sample_len is None else os.listdir(root_Mask)[:sample_len]
         self.folder_x_ray = os.listdir(root_X_ray) if sample_len is None else os.listdir(root_X_ray)[:sample_len]
 
+        shuffle(self.folder_mask)
+        shuffle(self.folder_x_ray)
 
     def __len__(self):
         return min(len(self.folder_mask), len(self.folder_x_ray))
