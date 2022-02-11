@@ -57,7 +57,4 @@ python test.py
 
 ## Chose generator
 --generator_type                                # ["mask", "x_ray"]. "mask" will generate lung masks. "x_ray" will generate chest X-rays.
-
-
-
-
+```
