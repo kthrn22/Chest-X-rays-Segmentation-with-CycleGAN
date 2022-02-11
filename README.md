@@ -1,5 +1,7 @@
 # Chest-X-rays-Segmentation-with-CycleGAN
 
+![output](https://user-images.githubusercontent.com/63922382/153581632-515cebb6-f157-4264-bff7-0840d92830c8.png)
+
 The network will be trained on unpaired images of chest X-rays and lung masks to learn a forward mapping (X-rays to Mask) and a reverse mapping (Mask to X-rays). The network consists of:
 * 2 Generators with U-Net architecture, and 6 residual blocks. One generator learns the forward mapping, and the other learns the reverse mapping.
 * 2 Discriminators classifies whether the generated images are real or fake. <br/>
