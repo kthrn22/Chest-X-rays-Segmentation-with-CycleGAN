@@ -6,4 +6,16 @@ The network will be trained on unpaired images of chest X-rays and lung masks to
 
 The network can be applied when there is no paired images of chest X-rays and lung mask, since the network can create a lung mask that corresponds to a chest X-ray.
 
-`ayo`
+## Dependencies
+Python 3 <br/>
+Numpy <br/>
+PyTorch <br/>
+
+## Preparing data
+Prepare chest X-ray images and lung mask images. Have chest X-rays and lung masks in 2 seperate folders.
+
+## Train the model
+Some parameters needed to be specified <br/>
+```
+ayo
+```
