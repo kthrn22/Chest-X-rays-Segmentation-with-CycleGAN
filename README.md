@@ -60,3 +60,6 @@ python test.py
 ## Chose generator
 --generator_type                                # ["mask", "x_ray"]. "mask" will generate lung masks. "x_ray" will generate chest X-rays.
 ```
+
+## Acknowledgments
+* I use this dataset for training: [Chest X-ray masks and labels](https://www.kaggle.com/nikhilpandey360/chest-xray-masks-and-labels)
