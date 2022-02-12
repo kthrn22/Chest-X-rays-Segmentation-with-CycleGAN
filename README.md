@@ -6,7 +6,7 @@ The network will be trained on unpaired images of chest X-rays and lung masks to
 * 2 Generators with U-Net architecture, and 6 residual blocks. One generator learns the forward mapping, and the other learns the reverse mapping.
 * 2 Discriminators classifies whether the generated images are real or fake. <br/>
 
-The network can be applied when there is no paired images of chest X-rays and lung mask, since the network can create a lung mask that corresponds to a chest X-ray.
+The network can be applied when there is no paired images of chest X-ray and lung mask, since the network can create a lung mask that corresponds to a chest X-ray.
 
 ## Dependencies
 Python 3 <br/>
